@@ -1,0 +1,108 @@
+# Static-webpage---Weather-Forcasting
+This is a static webpage developed using HTML and CSS .
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Weather Forcast Website</title>
+<meta charset="UTF-8">
+<style>
+ .container{
+  background: rgb(202, 202, 202);
+
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+ }
+ body{
+  background: linear-gradient(120deg, #30A56A, #247EAB); 
+ }
+ .container1{
+  background: rgb(202, 202, 202);
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 3px solid green;
+ }
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.button1 {
+  background-color: white; 
+  color: green; 
+  border: 2px solid green;
+}
+ h1{
+  font-size: 50px;
+
+ }
+ input[type=text] {
+  width: 98%;
+  font-size: 100%;
+}
+
+ body {
+  font-family: Arial;
+}
+ p{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+ }
+ footer {
+  text-align: center;
+  padding: 3px;
+}
+  </style>
+</head>
+<body>
+  <div class="container1">
+  <div class="container">
+    <h1>Weather Forcast</h1>
+    <h4>
+      Write the name of a City and select the Temperature Unit from the sidebar
+    </h4>
+    <form action="/url" method="GET">
+      <label for="cityname">Enter the City name:</label><br><br>
+          <input type="text" name="cityname" size="65" minlength="3" maxlength="100" required><br><br>
+          <p>Degree : </p>
+          <select id="degree" name="degree" width="600" style="height: 25px ; width: 100%">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Celcius">Celcius</option>
+          </select>
+          <br><br>
+          <button class="button button1" >Submit</button>
+      </label>
+  </form>
+
+  </div>
+  </div>
+  <footer>
+    <p>Made with HTML & CSS</p>
+  </footer>
+
+</body>
+
+</html>
